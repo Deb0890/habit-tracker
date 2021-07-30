@@ -4,6 +4,39 @@
 
 A basic habit tracking app
 
+## Installation & Usage
+
+### Installation
+
+* Clone or download the repo
+* Open terminal and navigate to `habit-tracker` folder
+* Navigate to the server folder and run `npm install` to install dependencies 
+* Navigate to the client folder and run `npm install` to install dependencies 
+
+### Usage - provided scripts and intended use
+
+`bash _scripts/startDev.sh`
+
+* starts server & db services
+* runs db migrations
+* seeds db for development
+* serves to localhost:3000
+
+`bash _scripts/startTest.sh`
+
+* starts server & db services
+* runs db migrations
+* triggers full test run 
+
+`bash _scripts/teardown.sh`
+
+* stop all running services
+* removes containers
+* removes volumes
+
+**Do not run both dev and test environment at the same time!**
+
+
 ## Technologies
 
 ### Client
